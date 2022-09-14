@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe's Group Challenge</title>
+</head>
+<body>
+
+    <!-- <div id="lunch-recipe">
+        <h1>Lunch Recipe</h1>
+        <ol>
+            <li>Prepare burger patty</li>
+            <li>Grill patty on medium heat</li>
+            <li>Toast bun while grilling meat</li>
+            <li>Prepare toppings</li>
+            <li>Assemble ingredients into hamburger when done</li>
+        </ol>    
+    </div>
+    <div id="dinner-recipe">
+        <h1>Dinner Recipe</h1>
+        <ol>
+            <li>Step 1</li>
+            <li>Step 2</li>
+            <li>Step 3</li>
+            <li>Step 4</li>
+            <li>Step 5</li>
+        </ol>    
+    </div> -->
+
+    <script>
+    // var recipe = document.getElementById("#lunch-recipe");
+    
+        var time = "noon";    
+        function displayRecipe(time){
+            if(time === "noon") {
+                //show lunch recipe
+                lunch();
+            } else if (time === "sunset") {
+                //show dinner recipe
+                dinner();
+            }
+        }  
+        
+        function lunch() {
+            document.write("<h1>Lunch Recipe</h1>1. Prepare burger patty</br>2. Grill patty on medium heat</br>3. Toast bun while grilling meat</br>4. Prepare toppings</br>5. Assemble ingredients into hamburger when done</br>"
+            );
+
+            // document.write("<h1>Lunch Recipe</h1><ol><li>Prepare burger patty</li><li>Grill patty on medium heat</li><li>Toast bun while grilling meat</li><li>Prepare toppings</li><li>Assemble ingredients into hamburger when done</li></ol>");
+        }
+
+        function dinner() {
+            document.write("<h1>Dinner Recipe</h1>1. Step 1</br>2. Step 2</br>3. Step 3</br>4. Step 4</br>5. Step 5</br>"
+            );
+        }
+
+        displayRecipe(time);
+    </script>
+</body>
+</html>
